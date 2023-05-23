@@ -3,13 +3,14 @@ pipeline {
   stages {
     stage('fluffy build') {
       steps {
-        echo 'placeholder'
+        sh 'echo Another Placeholder'
       }
     }
 
     stage('fluffy test') {
       steps {
-        echo 'placeholder'
+        sh 'sleep 5'
+        sh 'echo success!'
       }
     }
 
