@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('buzz build') {
       steps {
-        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
+        archiveArtifacts(artifacts: 'target/**/*.jar', fingerprint: true)
       }
     }
 
