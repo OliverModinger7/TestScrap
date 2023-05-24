@@ -1,20 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('buzz build') {
+    stage('Buzz Build') {
       steps {
-        archiveArtifacts(artifacts: 'target/**/*.jar', fingerprint: true)
+        sh './jenkins/build.sh'
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
-    stage('buzz test') {
-      agent any
-      environment {
-        BUZZ_NAME = 'Wroker Bee'
-      }
+    stage('Buzz Test') {
       steps {
-        sh '''echo I am a $BUZZ_NAME
-./jenkins/build.sh'''
+        sh './jenkins/test-all.sh'
       }
     }
 
