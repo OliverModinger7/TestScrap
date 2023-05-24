@@ -1,16 +1,21 @@
 pipeline {
   agent any
   stages {
-    stage('Buzz Build') {
+    stage('fluffy build') {
       steps {
         sh './jenkins/build.sh'
-        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
-    stage('Buzz Test') {
+    stage('fluffy Test') {
       steps {
         sh './jenkins/test-all.sh'
+      }
+    }
+
+    stage('fluffy deploy') {
+      steps {
+        sh './jenkins/deploy.sh staging'
       }
     }
 
