@@ -1,0 +1,8 @@
+'https://n1g.cl/Home/computacion/1156-adaptador-dual-35-a-doble-25-para-ssd-o-hdd-notebook-incluye-cables-sata-poder-y-datos-.html',
+'https://n1g.cl/Home/computacion/2077-lacie-2tb-hdd-externo-usb-c-usb-30-rugged-25windowsmac-resistent.html',
+'https://n1g.cl/Home/computacion/2080-disco-duro-externo-lacie-d2-profesional-8tb-usb-31-negro.html',
+'https://n1g.cl/Home/computacion/2296-terramaster-d2-310-usb-type-c-external-hard-drive-raid-enclosure-usb31-gen1-2-bay-raid-01single-diskless.html',
+'https://n1g.cl/Home/computacion/2295-terramaster-cofre-externo-para-5-hdd-d5-300-usb31-gen1-type-c-5-bay-raid-0-1-5-10-clone-jbod-sin-discos.html',
+'https://n1g.cl/Home/computacion/2078-disco-duro-externo-lacie-d2-profesional-8tb-usb-31-negro.html',
+'https://n1g.cl/Home/computacion/979-synology-4-bay-nas-diskstation-ds418-servidor-dual-lan-usb-30-sin-discos.html',
+'https://n1g.cl/Home/computacion/1946-synology-5-bay-expansion-unit-dx517-nas-sin-discos.html'

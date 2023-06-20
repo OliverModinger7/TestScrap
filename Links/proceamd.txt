@@ -1,0 +1,12 @@
+'https://n1g.cl/Home/computacion/1640-procesador-amd-ryzen-3-pro-4350g-3800-mhz-4-core-radeon-graphics-sam4-oem-sin-caja-incluye-ventilador-aparte-pn-100-100000148mp.html',
+'https://n1g.cl/Home/computacion/1807-procesador-amd-ryzen-5-5500-42ghz-turbo-6core12thread-am4-box-100-100000457box.html',
+'https://n1g.cl/Home/computacion/1647-oem-amd-ryzen-5-pro-4650g-graficos-rx-vega-7-procesador-am4-.html',
+'https://n1g.cl/Home/computacion/831-amd-ryzen-5-5600x-6-core-37-ghz-socket-am4-65w-100-100000065box-desktop-processor.html',
+'https://n1g.cl/Home/computacion/1311-amd-ryzen-7-5700g-radeon-vega-8-core-38ghz-max-boost-46ghz-socket-am4-graphics.html',
+'https://n1g.cl/Home/computacion/805-amd-ryzen-7-5800x-47ghz-turbo-8core-16-hilos-105w-tdp-pci-e-40.html',
+'https://n1g.cl/Home/computacion/1928-amd-ryzen-7-7700x-socket-am5-8-core-16-hilos-max-54ghz-video-int.html',
+'https://n1g.cl/Home/computacion/1929-amd-ryzen-9-7900x-socket-am5-12-core-24-hilos-max-54ghz-video-int.html',
+'https://n1g.cl/Home/computacion/2274-amd-ryzen-9-7800x3d-8-core-42-ghz-7000-series-am5-120w-amd-radeon-graphics-desktop-100-100000910wof.html',
+'https://n1g.cl/Home/computacion/2248-amd-ryzen-9-7900x3d-12-core-44-ghz-socket-am5-120w-amd-radeon-graphics-desktop-processor-100-100000909wof.html',
+'https://n1g.cl/Home/computacion/2221-amd-ryzen-9-7950x3d-16-core-42-ghz-7000-series-am5-120w-amd-radeon-graphics-desktop-processor-100-100000908wof.html',
+'https://n1g.cl/Home/computacion/1917-amd-ryzen-threadripper-pro-5975wx-zen-3-64-hilos-32-core-36-ghz-socket-swrx8-280w-desktop-processor-100-100000445wof.html'
