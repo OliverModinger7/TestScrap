@@ -4,22 +4,21 @@ import pandas as pd
 
 
 paginas= [
-'https://n1g.cl/Home/computacion/1567-intel-celeron-g4930-coffee-lake-dual-cor-32-ghz-lga-1151-300-series-54w-bx80684g4930-desktop-processor-intel-uhd-graphics-610.html',
-'https://n1g.cl/Home/computacion/1014-intel-core-i5-10400f-comet-lake-6-core-29-ghz-lga-1200-65w-bx8070110400f-desktop-processor.html',
-'https://n1g.cl/Home/computacion/1821-intel-core-i3-12100-33-ghz-4-cores-8-threads-12-mb-cache-lga1700-socket-box.html',
-'https://n1g.cl/Home/computacion/2292-intel-core-i3-13100-desktop-processor-4-cores-4-p-cores-0-e-cores-12mb-cache-up-to-45-ghz-box.html',
-'https://n1g.cl/Home/computacion/1166-intel-core-i5-11500-46ghz-turbo-lga-1200-rocket-lake-6-core-65w-intel-uhd-graphics-750.html',
-'https://n1g.cl/Home/computacion/1238-intel-core-i7-10700f-29ghz-16mb-lga1200.html',
-'https://n1g.cl/Home/computacion/1485-intel-core-i5-12600k-core-i5-12th-gen-alder-lake-10-core-6p4e-37-ghz-lga-1700-125w-intel-uhd-graphics-770-bx8071512600k.html',
-'https://n1g.cl/Home/computacion/605-intel-core-i7-10700-comet-lake-8-core-29-ghz-lga-1200-65w-bx8070110700-procesador-intel-uhd-graphics-630.html',
-'https://n1g.cl/Home/computacion/1160-intel-core-i5-11600-lga-1200-48-ghz-turbo-6-nucleos12-thead-rocket-lake-s.html',
-'https://n1g.cl/Home/computacion/610-intel-core-i7-10700k-51ghz-turbo-8-core-16-theads-comet-lake-lga-1200-125w-procesador-uhd-graphics-630.html',
-'https://n1g.cl/Home/computacion/1484-intel-core-i7-11700k-core-i7-11th-gen-rocket-lake-8-core-36-ghz-lga-1200-125w-intel-uhd-graphics-750-bx8070811700k.html'
+'https://n1g.cl/Home/computacion/2374-amd-ryzen-3-4100-ryzen-3-4000-series-quad-core-socket-am4-65w-none-integrated-graphics-desktop-processor-100-100000510box.html',
+'https://n1g.cl/Home/computacion/1876-amd-ryzen-5-4500-oem-6-core-12-hilos-socket-am4-65w-desktop-processor-.html',
+'https://n1g.cl/Home/computacion/1640-procesador-amd-ryzen-3-pro-4350g-3800-mhz-4-core-radeon-graphics-sam4-oem-sin-caja-incluye-ventilador-aparte-pn-100-100000148mp.html',
+'https://n1g.cl/Home/computacion/1807-procesador-amd-ryzen-5-5500-42ghz-turbo-6core12thread-am4-box-100-100000457box.html',
+'https://n1g.cl/Home/computacion/1647-oem-amd-ryzen-5-pro-4650g-graficos-rx-vega-7-procesador-am4-.html',
+'https://n1g.cl/Home/computacion/831-amd-ryzen-5-5600x-6-core-37-ghz-socket-am4-65w-100-100000065box-desktop-processor.html',
+'https://n1g.cl/Home/computacion/1311-amd-ryzen-7-5700g-radeon-vega-8-core-38ghz-max-boost-46ghz-socket-am4-graphics.html',
+'https://n1g.cl/Home/computacion/2274-amd-ryzen-9-7800x3d-8-core-42-ghz-7000-series-am5-120w-amd-radeon-graphics-desktop-100-100000910wof.html',
+'https://n1g.cl/Home/computacion/2248-amd-ryzen-9-7900x3d-12-core-44-ghz-socket-am5-120w-amd-radeon-graphics-desktop-processor-100-100000909wof.html',
+'https://n1g.cl/Home/computacion/1917-amd-ryzen-threadripper-pro-5975wx-zen-3-64-hilos-32-core-36-ghz-socket-swrx8-280w-desktop-processor-100-100000445wof.html'
         ]
 
 i = 0
 def scrap(paginas):
-    for i in range(0, 11,+1):
+    for i in range(0, 10,+1):
         url = paginas[i]
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')

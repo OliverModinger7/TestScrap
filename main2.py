@@ -12,6 +12,9 @@ import time
 SCROLL_PAUSE_TIME = 0.5
 base_url = 'https://n1g.cl/Home'
 graficas = '/39-tarjetas-graficas'
+pmamd = '/50-placa-madre-amd'
+pmintel = '/51-placa-madre-intel'
+ssd = '/54-discos-ssd'
 
 item = 1
 maximo = 100
@@ -25,14 +28,14 @@ options.add_experimental_option('excludeSwitches', ['enable-logging'])
 #while graficas and item <= maximo:
 #url = base_url + graficas + '?page=' + str(item)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-driver.get(base_url + graficas)
-time.sleep(2)
+driver.get(base_url + ssd)
+time.sleep(4)
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-time.sleep(2)
+time.sleep(4)
 clickdata = driver.find_element(By.CLASS_NAME, "vss-down-icon").click()
-time.sleep(2)
+time.sleep(4)
 page_source = driver.page_source
-time.sleep(2)
+time.sleep(4)
 
 #respuesta = requests.get(base_url + graficas)
 data = BeautifulSoup(page_source, 'html.parser')
@@ -46,7 +49,7 @@ for resultado in buscar_resultados:
     #nombre = link.find('a', class_='product-name')
     url = link.find('a', href=True)
     #print(f"nombre: {link.text.strip()}")
-    print(f"url: {url['href']}")
+    print("'"+ url['href'] +"',")
     #item += 1
     #print(buscar_resultados)
 
