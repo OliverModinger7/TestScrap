@@ -17,23 +17,26 @@ paginas= [
         ]
 
 i = 0
-def scrap(paginas):
-    for i in range(0, 10,+1):
+datos = []
+def scrapProducto(paginas):
+    for i in range(0, len(paginas),+1):
         url = paginas[i]
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
-        name = soup.find('h1', class_='product_name')
-        valor = soup.find('span', itemprop='price')
-        stock = soup.find('div', class_='si-items')
-        data = list()
-        data.append(name.text)
-        data.append(stock.text)
-        data.append(valor.text)
-        print(data)
+        name = soup.find('h1', class_='product_name').text
+        valor = soup.find('span', itemprop='price').text
+        newvalor = valor.replace("\xa0$","").replace(".","")
+        stock = soup.find('div', class_='si-items').text
+        newstock = stock.replace(" artículos","").replace("Fuera de stock","0").replace("+","").replace("Último artículo","1")
+        obj = {
+            'producto' : name,
+            'cantidad': int(newstock),
+            'precio': int(newvalor)
+        }
+        datos.append(obj)
+        print(obj)
         
-    return data
+    return datos
 
+#scrapProducto(paginas)
 
-scrap(paginas)
-
-    
