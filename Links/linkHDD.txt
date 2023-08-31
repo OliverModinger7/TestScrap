@@ -1,6 +1,0 @@
-'https://n1g.cl/Home/computacion/1877-disco-duro-hdd-toshiba-p300-35-1tb-7200rpm-sata-3.html',
-'https://n1g.cl/Home/computacion/2024-western-digital-blue-2tb-sata-6gbs-256mb-cache-35-wd20ezaz.html',
-'https://n1g.cl/Home/computacion/1783-western-digital-hdd-externo-5tb-25-usb-30-wdblack-d10-game-wdba3a0050bbk-wesn.html',
-'https://n1g.cl/Home/computacion/2258-wd-black-4tb-performance-desktop-hard-disk-drive-7200-rpm-sata-6gbs-256mb-cache-35-inch-wd4005fzbx.html',
-'https://n1g.cl/Home/computacion/2259-wd-red-plus-12tb-nas-hard-drive-7200-rpm-class-sata-6gbs-256mb-cache-35-wd120efbx.html',
-'https://n1g.cl/Home/computacion/2159-seagate-ironwolf-pro-18tb-hdd-nas-35-sata-3-6gbs-7200-rpm.html'

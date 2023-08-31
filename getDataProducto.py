@@ -39,4 +39,3 @@ def scrapProducto(paginas):
     return datos
 
 #scrapProducto(paginas)
-

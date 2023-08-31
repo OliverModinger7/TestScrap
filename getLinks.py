@@ -28,6 +28,8 @@ def links(datos):
     for i in range(0, len(datos), +1):
         url = datos[i]["web"]
         cantidad = datos[i]["cantidad"]
+        nameBd = datos[i]["web"]
+        nameparaBd = nameBd.replace("https://n1g.cl/Home/","")
 
         if 64 > cantidad > 32:
             service = Service()
@@ -68,7 +70,7 @@ def links(datos):
             #Insert base de datos
             conn = MongoClient("mongodb+srv://modingeroliver:Olivercolopa1@clustertst.cb6tmee.mongodb.net/", tlsCAFile=certifi.where())
             db = conn["productospc"]
-            coll = db["cantidadporweb"]
+            coll = db[nameparaBd]
             guarda = coll.insert_many(datosProducto)
             print(guarda.inserted_ids)
             conn.close()
@@ -87,11 +89,9 @@ def links(datos):
             page_source = driver.page_source
             time.sleep(4)
 
-            #respuesta = requests.get(base_url + graficas)
             data = BeautifulSoup(page_source, 'html.parser')
             buscar_resultados = data.find_all('article', class_='product-miniature js-product-miniature')
 
-            #buscar_resultados = data.find_all('h1', class_='product_name')
             data = []
             time.sleep(5)
 
@@ -106,7 +106,7 @@ def links(datos):
 
             conn = MongoClient("mongodb+srv://modingeroliver:Olivercolopa1@clustertst.cb6tmee.mongodb.net/", tlsCAFile=certifi.where())
             db = conn["productospc"]
-            coll = db["DatosProductos"]
+            coll = db[nameparaBd]
             guarda = coll.insert_many(datosProducto)
             print(guarda.inserted_ids)
             conn.close()
@@ -114,15 +114,3 @@ def links(datos):
     return datosProducto
 
 #SegundoPaso = links(datos)
-
-#for resultado in buscar_resultados:
-#    link = resultado.find('h3', class_='h3 product-title')
-#    #nombre = link.find('a', class_='product-name')
-#    url = link.find('a', href=True)
-#    #print(f"nombre: {link.text.strip()}")
-#    data.append(url['href'])
-#    #print("'"+ url['href'] +"',")
-#    #item += 1
-#    #print(buscar_resultados)
-#
-#        print(data)
