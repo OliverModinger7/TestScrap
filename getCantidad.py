@@ -44,7 +44,7 @@ datos = {}
 
 def ping():
     try:
-        conn = MongoClient('mongodb+srv://modingeroliver:Olivercolopa1@clustertst.cb6tmee.mongodb.net/', tlsCAFile=certifi.where())
+        conn = MongoClient(secrets.mongo_url, tlsCAFile=certifi.where())
         print("Connected successfully!!!")
     except:  
         print("Could not connect to MongoDB")
