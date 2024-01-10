@@ -68,7 +68,7 @@ def links(datos):
             
             #print(datosProducto)
             #Insert base de datos
-            conn = MongoClient("mongodb+srv://modingeroliver:Olivercolopa1@clustertst.cb6tmee.mongodb.net/", tlsCAFile=certifi.where())
+            conn = MongoClient(secrets.Mongo_url, tlsCAFile=certifi.where())
             db = conn["productospc"]
             coll = db[nameparaBd]
             guarda = coll.insert_many(datosProducto)
@@ -104,7 +104,7 @@ def links(datos):
             #print(data)
             datosProducto = getDataProducto.scrapProducto(data)
 
-            conn = MongoClient("mongodb+srv://modingeroliver:Olivercolopa1@clustertst.cb6tmee.mongodb.net/", tlsCAFile=certifi.where())
+            conn = MongoClient(secrets.Mongo_url, tlsCAFile=certifi.where())
             db = conn["productospc"]
             coll = db[nameparaBd]
             guarda = coll.insert_many(datosProducto)
